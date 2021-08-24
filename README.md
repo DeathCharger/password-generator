@@ -1,5 +1,6 @@
 # Password Generator
 HTML page which generates a random string which can be used as a password.
+https://password-gen.deathcharger.repl.co/
 
 ## Features
 - Self Hostable
