@@ -3,11 +3,12 @@ function isNumberKey(evt){
   if (charCode > 31 && (charCode < 48 || charCode > 57))
       return false;
   return true;
-}
+} // Allows only numerical input
+
 
 var form = document.getElementById("frm");
 function handleForm(event) { event.preventDefault(); } 
-form.addEventListener('submit', handleForm);
+form.addEventListener('submit', handleForm); // Prevents page reload on submit
 
 function generate(length) {
   var result           = '';
@@ -18,7 +19,7 @@ function generate(length) {
 charactersLength));
  }
  return result;
-}
+} //returns a random string
 
 
 function replace() {
@@ -35,4 +36,4 @@ function replace() {
   var randompassword = generate(pswdlength)
   document.getElementById("rlc").innerHTML= "Password: ";
   document.getElementById("fna").innerHTML= randompassword;
-}
+}   // gets triggered onSubmit, generates a string and replace the Password field with new password
