@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Password Generator</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/823900667693105165/879581753138872400/2010511.png">
+    <link rel="stylesheet" href="https://password-gen.deathcharger.repl.co/des.css">
+<body>
+    <div class="center">
+        <h1>Enter the length of your password and press generate</h1>
+        <br><br>
+        <m id="rlc"></m>
+        <f id="fna"></f>
+        <br> <br>
+        <form class="discordtag" id="frm" onsubmit="replace()">
+        <input type="number" onfocus=this.value='' maxlength="1" onkeypress="return isNumberKey(event)" placeholder="Example: 6" name="search" size="12" id="box">
+        <button class="btstyle" id="sub">GENERATE</button>
+        </form>
+        <br>
+        <n>Generates a Random String with letters and numbers <br> Valid Inputs: 4-20  </n>
+        <script src="https://password-gen.deathcharger.repl.co/process.js"></script>
+</body>
+
+</html>
+
